@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Thameen Ware</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Thameen Ware, Belvedere, Harare: Arabian and designer-inspired perfumes, home and beauty essentials. Order on WhatsApp or visit us at Longcheng Plaza.">
+  <meta name="theme-color" content="#172d18">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main data-page="home">
+    <!-- HERO SLIDESHOW -->
+    <section class="hero" aria-roledescription="carousel" aria-label="Featured perfumes">
+      <div class="hero__slides">
+        <div class="hero__slide is-active" data-align="left">
+          <img src="assets/img/hero-joyous.jpg" alt="Joyous Magnolia eau de parfum among spring flowers" width="1728" height="1307" fetchpriority="high">
+          <div class="hero__content">
+            <span class="hero__eyebrow">Arabian perfumes</span>
+            <h1 class="hero__title">Find your signature scent</h1>
+            <p class="hero__text">Over 25 Arabian and designer-inspired fragrances for him and for her, in store in Belvedere and on WhatsApp.</p>
+            <a class="btn btn-light" href="shop.html#all">Shop now</a>
+          </div>
+        </div>
+        <div class="hero__slide" data-align="right">
+          <img src="assets/img/nice-girl.jpg" alt="Nice Girl eau de parfum beside a red stiletto" width="1200" height="675" loading="lazy">
+          <div class="hero__content">
+            <span class="hero__eyebrow">New launches</span>
+            <h2 class="hero__title">Nice Girl</h2>
+            <p class="hero__text">Bold white florals and roasted tonka for a confident night out.</p>
+            <a class="btn btn-light" href="product.html#nice-girl">Discover</a>
+          </div>
+        </div>
+        <div class="hero__slide" data-align="left">
+          <img src="assets/img/hero-dubai-chocolate.jpg" alt="Dubai Chocolate Pistachio Kunafa perfume box with chocolate and pistachio" width="1728" height="1307" loading="lazy">
+          <div class="hero__content">
+            <span class="hero__eyebrow">Trending now</span>
+            <h2 class="hero__title">Dubai Chocolate</h2>
+            <p class="hero__text">Roasted pistachio, rich cocoa and kunafa sweetness. The viral dessert, bottled.</p>
+            <a class="btn btn-light" href="product.html#dubai-chocolate">Shop now</a>
+          </div>
+        </div>
+        <div class="hero__slide" data-align="right">
+          <img src="assets/img/kaylia-vanilla-cream.jpg" alt="Kaylia Vanilla Cream perfume with vanilla pods" width="1200" height="675" loading="lazy">
+          <div class="hero__content">
+            <span class="hero__eyebrow">For her</span>
+            <h2 class="hero__title">Kaylia Vanilla Cream</h2>
+            <p class="hero__text">Creamy, cosy vanilla with a soft milky sweetness.</p>
+            <a class="btn btn-light" href="product.html#kaylia-vanilla-cream">Shop now</a>
+          </div>
+        </div>
+      </div>
+      <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Previous slide"><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+      <button class="hero__arrow hero__arrow--next" type="button" aria-label="Next slide"><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+      <div class="hero__dots"></div>
+    </section>
+
+    <!-- NEW LAUNCHES -->
+    <section class="section container" aria-labelledby="t-new">
+      <div class="section-head"><h2 class="section-title" id="t-new">New launches</h2><a class="link-underline" href="shop.html#new">Shop now</a></div>
+      <div data-row="new"></div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section class="section container" aria-labelledby="t-best">
+      <div class="section-head"><h2 class="section-title" id="t-best">Best sellers</h2><a class="link-underline" href="shop.html#best">Shop now</a></div>
+      <div data-row="best"></div>
+    </section>
+
+    <!-- DISCOVER OUR COLLECTIONS -->
+    <section class="section container" aria-labelledby="t-col">
+      <div class="section-head"><h2 class="section-title" id="t-col">Discover our collections</h2></div>
+      <div class="collections">
+        <a class="tile" href="shop.html#best"><span class="tile__img"><img src="assets/img/scene-lucky.jpg" alt="" loading="lazy" width="1100" height="1053"></span><span class="tile__label">Best sellers</span><span class="btn btn-dark">Shop now</span></a>
+        <a class="tile" href="shop.html#new"><span class="tile__img"><img src="assets/img/scene-atika.jpg" alt="" loading="lazy" width="1100" height="1053"></span><span class="tile__label">New in</span><span class="btn btn-dark">Shop now</span></a>
+        <a class="tile" href="shop.html#men"><span class="tile__img"><img src="assets/img/scene-valentine-milano.jpg" alt="" loading="lazy" width="1100" height="1053"></span><span class="tile__label">Fragrances for him</span><span class="btn btn-dark">Shop now</span></a>
+        <a class="tile" href="shop.html#women"><span class="tile__img"><img src="assets/img/scene-wild-flower.jpg" alt="" loading="lazy" width="1100" height="1053"></span><span class="tile__label">Fragrances for her</span><span class="btn btn-dark">Shop now</span></a>
+      </div>
+    </section>
+
+    <!-- TRENDING -->
+    <section class="section container" aria-labelledby="t-trend">
+      <div class="section-head"><h2 class="section-title" id="t-trend">Trending</h2><a class="link-underline" href="shop.html#trending">Shop now</a></div>
+      <div data-row="trending"></div>
+    </section>
+
+    <!-- GET THE LOOK -->
+    <section class="section container" aria-labelledby="t-look">
+      <div class="look">
+        <div class="look__media">
+          <img src="assets/img/oud-mood-satin.jpg" alt="Oud Mood Satin extrait de parfum in front of its black and gold box" loading="lazy" width="1200" height="1200">
+          <a class="hotspot" href="product.html#oud-mood-satin" style="left:30%;top:58%" aria-label="Oud Mood Satin">+</a>
+        </div>
+        <div class="look__side">
+          <div class="section-head"><h2 class="section-title" id="t-look">Get the look</h2><p class="section-sub">Rich oud, amber and saffron. Our deep evening scents, chosen by the Thameen team.</p></div>
+          <div data-look="oud-mood-satin,aswad-noir,humrah,atika-royal-oud-carbon,shaghaf-caliph-abiyadh"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR HAPPY CUSTOMERS -->
+    <section class="reviews" aria-labelledby="t-rev">
+      <div class="container">
+        <div class="section-head"><h2 class="section-title" id="t-rev">Our happy customers</h2></div>
+        <div data-reviews></div>
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="story" aria-labelledby="t-story">
+      <div class="story__bg"><img src="assets/img/shaghaf-caliph-abiyadh.jpg" alt="" loading="lazy" width="1200" height="1200"></div>
+      <div class="container story__inner">
+        <div class="story__box">
+          <h2 id="t-story">Our story</h2>
+          <p>Thameen means “precious”. From our shop at Longcheng Plaza in Belvedere, we bring Harare a carefully chosen range of Arabian and designer-inspired perfumes, alongside everyday home and beauty essentials. Every bottle on our shelves is one we would wear ourselves.</p>
+          <a class="btn btn-accent" href="about.html">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO TEXT -->
+    <section class="seo" aria-labelledby="t-seo">
+      <div class="container seo__inner" data-reveal>
+        <h2 id="t-seo">Thameen Ware: your perfume shop in Harare</h2>
+        <p>A fragrance becomes part of who you are. It can remind you of a moment, lift your mood, or simply be the scent people remember you by. At Thameen Ware we help you find that scent.</p>
+        <h3>Arabian perfumes for every occasion</h3>
+        <p>Discover rich ouds, warm ambers, soft musks and sweet gourmand blends. From best sellers like Yaraa and Lucky No. 1 to new arrivals like Dubai Chocolate and Joyous Magnolia, there is something for every taste and budget.</p>
+        <h3>Shop in store or on WhatsApp</h3>
+        <p>Visit us at Shop 13, Longcheng Plaza, corner Mutley Bend and Samora Machel Avenue, Belvedere, or add your favourites to the cart and send your order on WhatsApp. We'll confirm stock, payment and delivery or collection.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

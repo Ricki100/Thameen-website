@@ -1,0 +1,93 @@
+/* ==========================================================================
+   THAMEEN — design tokens
+   Change brand colors, fonts, spacing and breakpoints here only.
+   Every other stylesheet reads from these variables.
+   ========================================================================== */
+:root {
+  color-scheme: light;
+
+  /* ---- Brand colors ---- */
+  --color-accent: #172d18;        /* Thameen green: announcement bar, Add to cart, links */
+  --color-accent-dark: #0e1d0f;   /* hover state of accent */
+  --color-sand: #f1eadc;          /* header, newsletter, footer band (cream) */
+  --color-sand-soft: #f8f4ec;     /* nav row, soft panels */
+  --color-sand-deep: #ddd0b6;     /* borders on sand */
+  --color-gold: #b78745;          /* Thameen gold: "WARE", stars, hover */
+  --color-gold-light: #d9b77e;    /* gold on dark green */
+
+  /* ---- Neutrals ---- */
+  --color-ink: #202020;           /* main text */
+  --color-ink-soft: #4a4440;      /* secondary text */
+  --color-muted: #8a817a;         /* captions, placeholders */
+  --color-line: #ebe4da;          /* hairlines */
+  --color-surface: #ffffff;       /* page background */
+  --color-surface-alt: #f6f3ee;   /* product image wells (matches cut-out photo backdrop) */
+  --color-black: #111111;         /* collection "Shop now" pills */
+
+  /* ---- State ---- */
+  --color-badge-new: #d4372c;     /* NEW badge */
+  --color-whatsapp: #25d366;      /* floating chat button */
+  --color-success: #3f7d4e;
+  --color-error: #b3261e;
+  --color-overlay: rgba(14, 29, 15, 0.5);
+  --color-on-accent: #f1eadc;     /* text on green */
+  --color-on-dark: #ffffff;
+
+  /* ---- Type ---- */
+  --font-body: "Montserrat", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: "Montserrat", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: "Cormorant Garamond", "Times New Roman", Georgia, serif;  /* matches the logo serif */
+  
+  --fs-xs: 0.75rem;    /* 12px: card titles, labels */
+  --fs-sm: 0.875rem;   /* 14px: body */
+  --fs-md: 1rem;       /* 16px */
+  --fs-lg: 1.25rem;    /* 20px */
+  --fs-xl: clamp(1.25rem, 1rem + 1vw, 1.625rem);   /* section titles */
+  --fs-2xl: clamp(1.75rem, 1.2rem + 2.4vw, 3rem);  /* hero */
+
+  --ls-body: 0.35px;
+  --ls-wide: 0.12em;
+  --ls-wider: 0.22em;
+
+  /* ---- Spacing ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --container: 1320px;
+  --section-gap: clamp(40px, 6vw, 80px);
+
+  /* ---- Shape & depth ---- */
+  --radius-pill: 25px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-sm: 0 2px 8px rgba(32, 32, 32, 0.08);
+  --shadow-md: 0 10px 30px rgba(32, 32, 32, 0.14);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 0.3s;
+
+  /* ---- Layers ---- */
+  --z-header: 50;
+  --z-float: 60;
+  --z-drawer: 80;
+  --z-toast: 90;
+
+  /* ---- Header heights (used for sticky offsets) ---- */
+  --announce-h: 34px;
+}
+
+@media (min-width: 600px) {
+  :root { --gutter: max(24px, env(safe-area-inset-left, 0px)); --gutter-r: max(24px, env(safe-area-inset-right, 0px)); }
+}
+@media (min-width: 1024px) {
+  :root { --gutter: 40px; --gutter-r: 40px; }
+}
